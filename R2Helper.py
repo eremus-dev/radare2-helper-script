@@ -86,7 +86,10 @@ class R2Helper:
         """removes IO files quit binary"""
         for i in self.files:
             os.remove(i)
+
         self.binary.quit()
+
+        return
 
     def cmd(self, string: str) -> Any:
         """wrapper for radare2 cmd input"""
@@ -112,6 +115,7 @@ class R2Helper:
         disas = self.binary.cmd(f"pdf @ {function}")
         pprint(disas)
         print("\n-=- End of Disassembly -=-\n\n")
+        return
 
     def decomp_func(self, function=None) -> None:
         """decompiles function based on function name or address"""
@@ -167,6 +171,7 @@ class R2Helper:
             add = self.step()
 
         print(f"\n-=- Reached {address} -=-\n")
+        return
 
     def trace_funct_to(self, address: str) -> None:
         """traces binary to address specified, only prints function names"""
@@ -184,6 +189,7 @@ class R2Helper:
             add = self.step()
 
         print(f"\n-=- Reached {address} -=-\n")
+        return
 
 
 if __name__ == "__main__":
