@@ -1,7 +1,7 @@
 #!/usr/bin/python3.7
 """ 
-Author: isprobsbroken
-Repo: github.com/isprobsbroken
+Author: sam
+Repo: github.com/s0larpunk
  
 Class of helper functions for scripting radare2 framework.
 To hopefully stop writing the same functions again and again.
