@@ -1,6 +1,6 @@
-# reversing-tools
+# Radare2 Helper script
 
-Helper scripts and tools for reverse engineering. These are intended for personal use, and are of limited functionality. 
+Radare2 helper script for reverse engineering. This is intended for personal use, and are of limited functionality. 
 
 They are mainly on github because I want access to them when I'm not on my personal computer. 
 
